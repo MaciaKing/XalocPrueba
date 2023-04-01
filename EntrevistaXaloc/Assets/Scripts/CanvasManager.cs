@@ -1,20 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CanvasManager : MonoBehaviour
-{
-    public Text textBullets;  // Texto para la cantidad de balas
-    public Text textShield;   // Texto para la cantidad de escudos
+public class CanvasManager : MonoBehaviour{
+    public Text textBullets;  // Text for number of bales
+    public Text textShield;   // Text for number of shields
 
-    // Método para actualizar el valor del texto de las balas
-    public void setBullets(string bullets)
-    {
+    // Setters
+    public void setBullets(string bullets){
         textBullets.text = bullets;
     }
 
-    // Método para actualizar el valor del texto de los escudos
-    public void setShield(string shield)
-    {
+    // Setters
+    public void setShield(string shield){
         textShield.text = shield;
     }
 }
