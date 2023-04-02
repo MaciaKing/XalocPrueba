@@ -23,10 +23,8 @@ public class ColliderShield : MonoBehaviour{
             Invoke("ReactivateObject", 5f); // Reactivate the object after 5 seconds
             game.addBullets(5); // Add 5 bullets   
         } else if (transform.gameObject.name=="Cactus Variant(Clone)"){ // is shield  
-            Debug.Log("HE ENTRAAADOOOOOO soy : " + transform.gameObject.name + "ha chocado : " + other.gameObject.name);
             game.addCactusShot(); // Add 1 cactus
-            //Delate the cactus
-            Destroy(transform.gameObject); // ESTA LINEA NO FUNCIONA
+            Destroy(transform.gameObject); //Delate the cactus
         }
     }
 

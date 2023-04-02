@@ -1376,7 +1376,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f8fc1d3047c4ab8bed42a93bd5696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageBullets: {fileID: 1565645926}
   textBullets: {fileID: 483556960}
+  imageCactus: {fileID: 457836830}
   textCactus: {fileID: 1535732740}
   label: {fileID: 1563017798}
   time: {fileID: 1304647732}
