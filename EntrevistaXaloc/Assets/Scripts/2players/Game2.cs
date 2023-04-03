@@ -31,24 +31,14 @@ public class Game2 : MonoBehaviour{
 
         if (endGame){
             Debug.Log("End Game");
-
         }
-       /* //if the game is end
-        if (nCactus >= maxNcactus){
-            float elapsedTime = Time.time - startTime;
-            canvasManager.setTime(elapsedTime.ToString());
-            canvasManager.hideCanvas();
-            Time.timeScale = 0;
-        }*/
 
         // shot
         if (Input.GetKeyDown(KeyCode.Space)){
-            Debug.Log("Space 1111111");
             shot(1);
         }
         
         if (Input.GetKeyDown(KeyCode.L)){
-            Debug.Log("L 22222222");
             shot(2);
         }
         //update bullets and shield

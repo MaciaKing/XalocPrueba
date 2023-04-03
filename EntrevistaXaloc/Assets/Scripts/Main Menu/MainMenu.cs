@@ -8,30 +8,30 @@ public class MainMenu : MonoBehaviour
 {
     public Button button1; 
     public Button button2; 
-    public string nombreEscena; // Nombre de la escena a cargar
-    public string nombreEscena2;
-    public GameObject menuPrincipal; // Objeto del menú principal
+    public string sceneName; // Name of the scene to load
+    public string sceneName2;
+    public GameObject mainMenu; // Main menu object
 
     // Start is called before the first frame update
     void Start()
     {
-        // Asociar la función "CargarEscena" al botón
-        button1.onClick.AddListener(() => StartCoroutine(CargarEscenaAsync(nombreEscena)));
-        button2.onClick.AddListener(() => StartCoroutine(CargarEscenaAsync(nombreEscena2)));
+        // Associate the "LoadSceneAsync" function with the button
+        button1.onClick.AddListener(() => StartCoroutine(LoadSceneAsync(sceneName)));
+        button2.onClick.AddListener(() => StartCoroutine(LoadSceneAsync(sceneName2)));
     }
 
-    IEnumerator CargarEscenaAsync(string nombreEscena)
+    IEnumerator LoadSceneAsync(string sceneName)
     {
-        // Cargar la escena indicada por nombre
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(nombreEscena);
+        // Load the scene indicated by the name
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
 
-        // Esperar a que la escena se cargue completamente
+        // Wait for the scene to load completely
         while (!asyncLoad.isDone)
         {
             yield return null;
         }
 
-        // Esconder el menú principal
-        menuPrincipal.SetActive(false);
+        // Hide the main menu
+        mainMenu.SetActive(false);
     }
 }

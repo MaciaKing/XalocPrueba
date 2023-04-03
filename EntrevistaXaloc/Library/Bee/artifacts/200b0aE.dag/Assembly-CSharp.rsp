@@ -349,12 +349,12 @@
 "Assets/Scripts/2players/Game2.cs"
 "Assets/Scripts/2players/Player1.cs"
 "Assets/Scripts/2players/Player2.cs"
-"Assets/Scripts/Bullet.cs"
-"Assets/Scripts/CanvasManager.cs"
-"Assets/Scripts/ColliderShield.cs"
 "Assets/Scripts/Main Menu/MainMenu.cs"
-"Assets/Scripts/PlayerMovement.cs"
-"Assets/Scripts/SingelPlayerGame.cs"
+"Assets/Scripts/Singel Player/Bullet.cs"
+"Assets/Scripts/Singel Player/CanvasManager.cs"
+"Assets/Scripts/Singel Player/ColliderShield.cs"
+"Assets/Scripts/Singel Player/PlayerMovement.cs"
+"Assets/Scripts/Singel Player/SingelPlayerGame.cs"
 -langversion:9.0
 
 /deterministic
